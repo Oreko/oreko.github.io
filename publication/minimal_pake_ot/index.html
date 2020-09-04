@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="We give a characterization implying that collision-resistance and second-preimage resistance are equivalent, in an asymptotic sense, for a class of Linicrypt programs. Furthermore, there is a polynomial-time procedure for determining whether such a Linicrypt program is collision/second-preimage resistant.">
+  <meta name="description" content="We present a generalization of the seminal EKE protocol to achieve a minimal (in communication flows and exponentiations) sPAKE in the UC model using a primitive we call programmable-once public function (POPF). Intuitively, a POPF is a function whose output can be programmed by one party on exactly one point. All other outputs of the function are outside of any party&#39;s control. We also use this primitive to achieve a UC-secure 1-out-of-$N$ oblivious tranfer protocol.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://oreko.github.io/publication/preimage_linicrypt/">
+  <link rel="alternate" hreflang="en-us" href="https://oreko.github.io/publication/minimal_pake_ot/">
 
   
 
@@ -216,7 +216,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu20deb4851eee85012172a935ccf5af3d_6730_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu20deb4851eee85012172a935ccf5af3d_6730_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://oreko.github.io/publication/preimage_linicrypt/">
+  <link rel="canonical" href="https://oreko.github.io/publication/minimal_pake_ot/">
 
   
   
@@ -231,15 +231,15 @@
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Ian McQuoid">
-  <meta property="og:url" content="https://oreko.github.io/publication/preimage_linicrypt/">
-  <meta property="og:title" content="Characterizing Collision and Second-Preimage Resistance in Linicrypt | Ian McQuoid">
-  <meta property="og:description" content="We give a characterization implying that collision-resistance and second-preimage resistance are equivalent, in an asymptotic sense, for a class of Linicrypt programs. Furthermore, there is a polynomial-time procedure for determining whether such a Linicrypt program is collision/second-preimage resistant."><meta property="og:image" content="https://oreko.github.io/publication/preimage_linicrypt/featured.jpg">
-  <meta property="twitter:image" content="https://oreko.github.io/publication/preimage_linicrypt/featured.jpg"><meta property="og:locale" content="en-us">
+  <meta property="og:url" content="https://oreko.github.io/publication/minimal_pake_ot/">
+  <meta property="og:title" content="Minimal Symmetric PAKE and 1-out-of-N OT from Programmable-Once Public Functions | Ian McQuoid">
+  <meta property="og:description" content="We present a generalization of the seminal EKE protocol to achieve a minimal (in communication flows and exponentiations) sPAKE in the UC model using a primitive we call programmable-once public function (POPF). Intuitively, a POPF is a function whose output can be programmed by one party on exactly one point. All other outputs of the function are outside of any party&#39;s control. We also use this primitive to achieve a UC-secure 1-out-of-$N$ oblivious tranfer protocol."><meta property="og:image" content="https://oreko.github.io/publication/minimal_pake_ot/featured.jpg">
+  <meta property="twitter:image" content="https://oreko.github.io/publication/minimal_pake_ot/featured.jpg"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-01-01T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-05-24T18:25:14-07:00">
+    <meta property="article:modified_time" content="2020-09-03T22:45:52-07:00">
   
 
   
@@ -261,16 +261,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://oreko.github.io/publication/preimage_linicrypt/"
+    "@id": "https://oreko.github.io/publication/minimal_pake_ot/"
   },
-  "headline": "Characterizing Collision and Second-Preimage Resistance in Linicrypt",
+  "headline": "Minimal Symmetric PAKE and 1-out-of-N OT from Programmable-Once Public Functions",
   
   "image": [
-    "https://oreko.github.io/publication/preimage_linicrypt/featured.jpg"
+    "https://oreko.github.io/publication/minimal_pake_ot/featured.jpg"
   ],
   
   "datePublished": "2020-01-01T00:00:00Z",
-  "dateModified": "2020-05-24T18:25:14-07:00",
+  "dateModified": "2020-09-03T22:45:52-07:00",
   
   "author": {
     "@type": "Person",
@@ -285,7 +285,7 @@
       "url": "https://oreko.github.io/images/icon_hu20deb4851eee85012172a935ccf5af3d_6730_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "We give a characterization implying that collision-resistance and second-preimage resistance are equivalent, in an asymptotic sense, for a class of Linicrypt programs. Furthermore, there is a polynomial-time procedure for determining whether such a Linicrypt program is collision/second-preimage resistant."
+  "description": "We present a generalization of the seminal EKE protocol to achieve a minimal (in communication flows and exponentiations) sPAKE in the UC model using a primitive we call programmable-once public function (POPF). Intuitively, a POPF is a function whose output can be programmed by one party on exactly one point. All other outputs of the function are outside of any party's control. We also use this primitive to achieve a UC-secure 1-out-of-$N$ oblivious tranfer protocol."
 }
 </script>
 
@@ -303,7 +303,7 @@
 
 
 
-  <title>Characterizing Collision and Second-Preimage Resistance in Linicrypt | Ian McQuoid</title>
+  <title>Minimal Symmetric PAKE and 1-out-of-N OT from Programmable-Once Public Functions | Ian McQuoid</title>
 
 </head>
 
@@ -536,12 +536,10 @@
 
   
   
-    
-  
 
 
 <div class="article-container pt-3">
-  <h1>Characterizing Collision and Second-Preimage Resistance in Linicrypt</h1>
+  <h1>Minimal Symmetric PAKE and 1-out-of-N OT from Programmable-Once Public Functions</h1>
 
   
 
@@ -558,7 +556,7 @@
     
 
   
-  <span>Ian McQuoid</span>, <span>Trevor Swope</span>, <span>Mike Rosulek</span>
+  <span>Ian McQuoid</span>, <span>Mike Rosulek</span>, <span>Lawrence Roy</span>
   </div>
   
   
@@ -569,7 +567,7 @@
     
       
     
-    November 2019
+    August 2020
   </span>
   
 
@@ -598,8 +596,6 @@
 
 
 
-  
-
 
 
 <div class="btn-links mb-3">
@@ -619,16 +615,12 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="/files/pdfs/Characterizing_Collision_and_Second_Preimage_Resistance_in_Linicrypt.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="/files/pdfs/Minimal_Symmetric_PAKE_and_1-out-of_N_OT_from_Programmable-Once_Public_Functions.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
-<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/preimage_linicrypt/cite.bib">
-  Cite
-</button>
 
 
 
@@ -641,31 +633,11 @@
 
 
 
-
-<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.1007/978-3-030-36030-6_18" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.1145/3372297.3417870" target="_blank" rel="noopener">
   DOI
 </a>
 
 
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-    
-      
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="/files/slides/IACR_TCC_Linicrypt_Presentation.pdf" >
-    
-    Slides
-  </a>
-
 
 </div>
 
@@ -673,9 +645,9 @@
 </div>
 
 
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 258px;">
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 511px; max-height: 265px;">
   <div style="position: relative">
-    <img src="/publication/preimage_linicrypt/featured_hu9abbd3abd5fe060e6d02f67d7bc4e650_39340_720x0_resize_q90_lanczos.jpg" alt="" class="featured-image">
+    <img src="/publication/minimal_pake_ot/featured.jpg" alt="" class="featured-image">
     
   </div>
 </div>
@@ -686,7 +658,17 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Linicrypt (Carmer &amp; Rosulek, Crypto 2016) refers to the class of algorithms that make calls to a random oracle and otherwise manipulate values via fixed linear operations. We give a characterization of collision-resistance and second-preimage resistance for a significant class of Linicrypt programs (specifically, those that achieve domain separation on their random oracle queries via nonces). Our characterization implies that collision-resistance and second-preimage resistance are equivalent, in an asymptotic sense, for this class. Furthermore, there is a polynomial-time procedure for determining whether such a Linicrypt program is collision/second-preimage resistant.</p>
+    <p class="pub-abstract"><p>Symmetric password-authenticated key exchange (sPAKE) can be seen as an extension of traditional key exchange where two parties agree on a shared key if and only if they share a common secret (possibly low-entropy) password. We present the first sPAKE protocol to simultaneously achieve the following properties:</p>
+<ul>
+<li>only two exponentiations per party, the same as plain unauthenticated Diffie-Hellman key agreement (and likely optimal);</li>
+<li>optimal round complexity: a single flow (one message from each party that can be sent in parallel) to achieve implicit authentication, or two flows to achieve explicit mutual authentication;</li>
+<li>security in the random oracle model, rather than ideal cipher or generic group model;</li>
+<li>UC security, rather than game-based.
+Our protocol is a generalization of the seminal EKE protocol of Bellovin &amp; Merritt (S&amp;P 1992).
+We also present a UC-secure 1-out-of-$N$ oblivious transfer (OT) protocol, for random payloads. Its communication complexity is independent of $N$, meaning that $N$ can even be exponential in the security parameter. Such a protocol can also be considered a kind of oblivious PRF (OPRF). Our protocol improves over the leading UC-secure 1-out-of-$N$ OT construction of Masny &amp; Rindal (CCS 2019) for all $N&gt;2$, and has essentially the same cost for $N=2$.
+The new technique underlying these results is a primitive we call programmable-once public function (POPF). Intuitively, a POPF is a function whose output can be programmed by one party on exactly one point. All other outputs of the function are outside of any party&rsquo;s control, in a provable sense.</li>
+</ul>
+</p>
     
 
     
@@ -716,7 +698,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In Theory of Cryptography Conference</div>
+          <div class="col-12 col-md-9">In ACM Conference on Computer and Communications Security</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -738,7 +720,7 @@
   
   <a class="badge badge-light" href="/tag/cryptography/">Cryptography</a>
   
-  <a class="badge badge-light" href="/tag/tcc/">TCC</a>
+  <a class="badge badge-light" href="/tag/ccs/">CCS</a>
   
   <a class="badge badge-light" href="/tag/publications/">Publications</a>
   
@@ -807,7 +789,7 @@
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/publication/minimal_pake_ot/">Minimal Symmetric PAKE and 1-out-of-N OT from Programmable-Once Public Functions</a></li>
+      <li><a href="/publication/preimage_linicrypt/">Characterizing Collision and Second-Preimage Resistance in Linicrypt</a></li>
       
     </ul>
   </div>

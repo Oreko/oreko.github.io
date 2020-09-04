@@ -13,6 +13,14 @@
     </image>
     
     <item>
+      <title>Minimal Symmetric PAKE and 1-out-of-N OT from Programmable-Once Public Functions</title>
+      <link>https://oreko.github.io/publication/minimal_pake_ot/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://oreko.github.io/publication/minimal_pake_ot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Characterizing Collision and Second-Preimage Resistance in Linicrypt</title>
       <link>https://oreko.github.io/publication/preimage_linicrypt/</link>
       <pubDate>Fri, 22 Nov 2019 00:00:00 +0000</pubDate>

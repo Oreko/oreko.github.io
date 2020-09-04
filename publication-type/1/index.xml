@@ -5,12 +5,20 @@
     <link>https://oreko.github.io/publication-type/1/</link>
       <atom:link href="https://oreko.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://oreko.github.io/images/icon_hu20deb4851eee85012172a935ccf5af3d_6730_512x512_fill_lanczos_center_2.png</url>
       <title>1</title>
       <link>https://oreko.github.io/publication-type/1/</link>
     </image>
+    
+    <item>
+      <title>Minimal Symmetric PAKE and 1-out-of-N OT from Programmable-Once Public Functions</title>
+      <link>https://oreko.github.io/publication/minimal_pake_ot/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://oreko.github.io/publication/minimal_pake_ot/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Characterizing Collision and Second-Preimage Resistance in Linicrypt</title>
