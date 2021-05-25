@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="Graduate Research Assistant">
+  <meta name="description" content="Many known libraries and papers on oblivious transfer either mistreat or ignore the issue of message reuse in multi-instance protocols. We provide a treatment of how to properly batch recent 2-round oblivious transfer protocols which are of import for multiparty computation which often relies on oblivious transfer extension built upon batch OT. We also abstract the recent endemic OT protocol of Masny and Rindal and show that it is, in fact, an instance of the OT protocol described by McQuoid, Rosulek, and Roy in their CCS2020 paper. We further provide optimizations for such POPF protocols and extend the list of known POPF constructions including a very simple OT protocol that may have pedagogical interest.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://oreko.github.io/tag/cryptography/">
+  <link rel="alternate" hreflang="en-us" href="https://oreko.github.io/publication/batching_ot/">
 
   
 
@@ -203,7 +203,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu20deb4851eee85012172a935ccf5af3d_6730_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu20deb4851eee85012172a935ccf5af3d_6730_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://oreko.github.io/tag/cryptography/">
+  <link rel="canonical" href="https://oreko.github.io/publication/batching_ot/">
 
   
   
@@ -213,32 +213,81 @@
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Ian McQuoid">
-  <meta property="og:url" content="https://oreko.github.io/tag/cryptography/">
-  <meta property="og:title" content="Cryptography | Ian McQuoid">
-  <meta property="og:description" content="Graduate Research Assistant"><meta property="og:image" content="https://oreko.github.io/images/icon_hu20deb4851eee85012172a935ccf5af3d_6730_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="https://oreko.github.io/images/icon_hu20deb4851eee85012172a935ccf5af3d_6730_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:url" content="https://oreko.github.io/publication/batching_ot/">
+  <meta property="og:title" content="Batching Base Oblivious Transfers | Ian McQuoid">
+  <meta property="og:description" content="Many known libraries and papers on oblivious transfer either mistreat or ignore the issue of message reuse in multi-instance protocols. We provide a treatment of how to properly batch recent 2-round oblivious transfer protocols which are of import for multiparty computation which often relies on oblivious transfer extension built upon batch OT. We also abstract the recent endemic OT protocol of Masny and Rindal and show that it is, in fact, an instance of the OT protocol described by McQuoid, Rosulek, and Roy in their CCS2020 paper. We further provide optimizations for such POPF protocols and extend the list of known POPF constructions including a very simple OT protocol that may have pedagogical interest."><meta property="og:image" content="https://oreko.github.io/publication/batching_ot/featured.jpg">
+  <meta property="twitter:image" content="https://oreko.github.io/publication/batching_ot/featured.jpg"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2021-01-01T00:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2021-01-01T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2021-05-25T10:49:10-07:00">
   
-
-  
-
-
-
 
   
 
 
+    
 
 
 
-  <title>Cryptography | Ian McQuoid</title>
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://oreko.github.io/publication/batching_ot/"
+  },
+  "headline": "Batching Base Oblivious Transfers",
+  
+  "image": [
+    "https://oreko.github.io/publication/batching_ot/featured.jpg"
+  ],
+  
+  "datePublished": "2021-01-01T00:00:00Z",
+  "dateModified": "2021-05-25T10:49:10-07:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Ian McQuoid"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ian McQuoid",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://oreko.github.io/images/icon_hu20deb4851eee85012172a935ccf5af3d_6730_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "Many known libraries and papers on oblivious transfer either mistreat or ignore the issue of message reuse in multi-instance protocols. We provide a treatment of how to properly batch recent 2-round oblivious transfer protocols which are of import for multiparty computation which often relies on oblivious transfer extension built upon batch OT. We also abstract the recent endemic OT protocol of Masny and Rindal and show that it is, in fact, an instance of the OT protocol described by McQuoid, Rosulek, and Roy in their CCS2020 paper. We further provide optimizations for such POPF protocols and extend the list of known POPF constructions including a very simple OT protocol that may have pedagogical interest."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Batching Base Oblivious Transfers | Ian McQuoid</title>
 
 </head>
 
@@ -444,6 +493,79 @@
 </nav>
 
 
+  <div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Batching Base Oblivious Transfers</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span>Ian McQuoid</span>, <span>Mike Rosulek</span>, <span>Lawrence Roy</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    January 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
   
 
 
@@ -456,68 +578,210 @@
 
 
 
-
   
 
+
+
+<div class="btn-links mb-3">
   
   
+
+
+
+
+
+
+
+
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1>Cryptography</h1>
 
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="/files/pdfs/Batching_Base_Oblivious_Transfers.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
+        data-filename="/publication/batching_ot/cite.bib">
+  Cite
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://doi.org/10.1145/3372297.3417870" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 623px; max-height: 186px;">
+  <div style="position: relative">
+    <img src="/publication/batching_ot/featured.jpg" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Protocols that make use of oblivious transfer (OT) rarely require just one instance. Usually a batch of OTs is required — notably, when generating base OTs for OT extension. There is a natural way to optimize 2-round OT protocols when generating a batch, by reusing certain protocol messages across all instances. In this work we show that this batch optimization is error-prone. We catalog many implementations and papers that have an incorrect treatment of this batch optimization, some of them leading to catastrophic leakage in OT extension protocols.
+We provide a full treatment of how to properly optimize recent 2-round OT protocols for the batch setting. Along the way we show several performance improvements to the OT protocol of McQuoid, Rosulek, and Roy (ACM CCS 2020). In particular, we show an extremely simple OT construction that may be of pedagogical interest.</p>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            
+            <a href="/publication/#3">
+              Preprint
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">Cryptology ePrint Archive</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+
+
+
+<div class="article-tags">
   
-
+  <a class="badge badge-light" href="/tag/cryptography/">Cryptography</a>
+  
+  <a class="badge badge-light" href="/tag/ot/">OT</a>
+  
+  <a class="badge badge-light" href="/tag/eprint/">ePrint</a>
+  
+  <a class="badge badge-light" href="/tag/publications/">Publications</a>
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+
+
+
+
+
+
+
+
+
+
 
   
-  
     
     
-    
-    <div>
-      <h2><a href="/publication/batching_ot/" >Batching Base Oblivious Transfers</a></h2>
-      <div class="article-style">
-        
-          Many known libraries and papers on oblivious transfer either mistreat or ignore the issue of message reuse in multi-instance protocols. We provide a treatment of how to properly batch recent 2-round oblivious transfer protocols which are of import for multiparty computation which often relies on oblivious transfer extension built upon batch OT. We also abstract the recent endemic OT protocol of Masny and Rindal and show that it is, in fact, an instance of the OT protocol described by McQuoid, Rosulek, and Roy in their CCS2020 paper. We further provide optimizations for such POPF protocols and extend the list of known POPF constructions including a very simple OT protocol that may have pedagogical interest.
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/publication/minimal_pake_ot/" >Minimal Symmetric PAKE and 1-out-of-N OT from Programmable-Once Public Functions</a></h2>
-      <div class="article-style">
-        
-          We present a generalization of the seminal EKE protocol to achieve a minimal (in communication flows and exponentiations) sPAKE in the UC model using a primitive we call programmable-once public function (POPF). Intuitively, a POPF is a function whose output can be programmed by one party on exactly one point. All other outputs of the function are outside of any party's control. We also use this primitive to achieve a UC-secure 1-out-of-$N$ oblivious tranfer protocol.
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/publication/preimage_linicrypt/" >Characterizing Collision and Second-Preimage Resistance in Linicrypt</a></h2>
-      <div class="article-style">
-        
-          We give a characterization implying that collision-resistance and second-preimage resistance are equivalent, in an asymptotic sense, for a class of Linicrypt programs. Furthermore, there is a polynomial-time procedure for determining whether such a Linicrypt program is collision/second-preimage resistant.
-        
-      </div>
-    </div>
-  
+
+
+
+
 
   
 
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/minimal_pake_ot/">Minimal Symmetric PAKE and 1-out-of-N OT from Programmable-Once Public Functions</a></li>
+      
+      <li><a href="/publication/preimage_linicrypt/">Characterizing Collision and Second-Preimage Resistance in Linicrypt</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
 </div>
 
       

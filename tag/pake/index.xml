@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PAKE | Ian McQuoid</title>
+    <link>https://oreko.github.io/tag/pake/</link>
+      <atom:link href="https://oreko.github.io/tag/pake/index.xml" rel="self" type="application/rss+xml" />
+    <description>PAKE</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 28 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://oreko.github.io/images/icon_hu20deb4851eee85012172a935ccf5af3d_6730_512x512_fill_lanczos_center_2.png</url>
+      <title>PAKE</title>
+      <link>https://oreko.github.io/tag/pake/</link>
+    </image>
+    
+    <item>
+      <title>Minimal Symmetric PAKE and 1-out-of-N OT from Programmable-Once Public Functions</title>
+      <link>https://oreko.github.io/publication/minimal_pake_ot/</link>
+      <pubDate>Fri, 28 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://oreko.github.io/publication/minimal_pake_ot/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
