@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asiacrypt | Ian McQuoid</title>
+    <link>https://oreko.github.io/tag/asiacrypt/</link>
+      <atom:link href="https://oreko.github.io/tag/asiacrypt/index.xml" rel="self" type="application/rss+xml" />
+    <description>Asiacrypt</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://oreko.github.io/images/icon_hu20deb4851eee85012172a935ccf5af3d_6730_512x512_fill_lanczos_center_2.png</url>
+      <title>Asiacrypt</title>
+      <link>https://oreko.github.io/tag/asiacrypt/</link>
+    </image>
+    
+    <item>
+      <title>Batching Base Oblivious Transfers</title>
+      <link>https://oreko.github.io/publication/batching_ot/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://oreko.github.io/publication/batching_ot/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
